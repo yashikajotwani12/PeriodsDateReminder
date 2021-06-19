@@ -14,8 +14,19 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from home1 import execute
 from django.urls import path
+from home1.views import sender, email_temp
+from home.views import home, add_form
+from django.views.generic import TemplateView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+     path('admin/', admin.site.urls),
+    path('robots.txt', TemplateView.as_view(template_name="robots.txt", content_type='text/plain')),
+    path('', home, name="home"),
+   
+    path('add/', add_form, name="add_form"),
+  
+    path('sender/', sender, name="sender"),
+    path('wish/<str:sender>/<str:receiver>/', email_temp, name="email_temp")
 ]
