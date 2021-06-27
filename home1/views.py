@@ -1,6 +1,7 @@
 from django.shortcuts import render,HttpResponse, redirect
 from django.conf import settings
 from datetime import date, datetime
+from django.template.loader import render_to_string
 from django.http import request
 from home.models import Person
 from home.views import home
@@ -12,7 +13,7 @@ from django.core.mail import EmailMultiAlternatives
 
 def sender(request):
     today=datetime.now().strftime('%d')
-    month=datetime.now().strftime('%M')
+    month_now=datetime.now().strftime('%m')
     data= Person.objects.all()
     for item in data.values('id','sender','receiver','period','email','month'):
         period= item['period'].strftime('%d')
@@ -21,7 +22,7 @@ def sender(request):
         month_in_pd=item['month']
         sender=item['sender'].split(" ")[0]
         receiver=item['receiver'].split(" ")[0]
-        if period == today and month_in_pd< int(month):
+        if period == today and month_in_pd< int(month_now):
             context={
                 "receiver":receiver.capitalize(),
                 "sender":sender.capitalize()
@@ -33,7 +34,7 @@ def sender(request):
             email = EmailMultiAlternatives(
                 f" Periods Date is coming {receiver.capitalize()}",
                 text_content,
-                "yashikajotwani <yashikajothwani@gmail.com>",
+                "yashikajotwani <yashikajothwani39@gmail.com>",
                 [receiver_email]
             )
             email.attach_alternative(html_content, "text/html")

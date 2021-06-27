@@ -18,13 +18,13 @@ def add_form(request):
             receiver = request.POST['receiver']
             email = request.POST['email']
             period = request.POST['period']
-            month_now = int(datetime.now().strftime("%M"))-1
+            month_now = int(datetime.now().strftime("%m"))-1
             person = Person(
                 sender=sender,
                 receiver=receiver,
                 email=email,
                 period=period,
-                month_now=month_now
+                month=month_now
             )
             person.save()
             messages.success(

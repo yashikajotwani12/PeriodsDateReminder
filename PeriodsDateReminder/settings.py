@@ -133,5 +133,5 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = config("EMAIL_HOST_USER")
 EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")
-DEFAULT_FROM_EMAIL='PyWisher <no-reply@pywisher.ml>' 
+DEFAULT_FROM_EMAIL='Yashika Jotwani <yashikajothwani39@gmail.com>' 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
