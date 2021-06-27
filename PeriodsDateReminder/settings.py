@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'import_export',
 ]
 
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
      'whitenoise.middleware.WhiteNoiseMiddleware',
