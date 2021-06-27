@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-28pkyag0qsorvshv=ptz9rf5zrshh-w7$r7lv+jesqx(p=51^y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -60,7 +60,7 @@ ROOT_URLCONF = 'PeriodsDateReminder.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -72,7 +72,7 @@ TEMPLATES = [
         },
     },
 ]
-
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 WSGI_APPLICATION = 'PeriodsDateReminder.wsgi.application'
 
 
@@ -122,7 +122,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 STATIC_URL = '/static/'
 
 # Default primary key field type
