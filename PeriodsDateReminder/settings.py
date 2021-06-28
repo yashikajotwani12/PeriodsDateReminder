@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'django.conf',
     'home',
     'home1',
-    'import_export',
 ]
 
 
