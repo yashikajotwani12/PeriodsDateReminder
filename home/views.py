@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.contrib.messages.api import error
 from django.shortcuts import render
 from .models import Person
-# from .resources import PersonResource
+from .resources import PersonResource
 from django.contrib import messages
 from tablib import Dataset
 from datetime import datetime
