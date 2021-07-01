@@ -18,13 +18,6 @@ The theme of our project idea is that every women should get their periods on ti
 - **Code Editor and tools**: VS Code
 
 
-
-| ![About Us](https://user-images.githubusercontent.com/76901313/124150039-cd644f80-daae-11eb-9e96-df76d0e8be82.png) | ![Screenshot (17)](https://user-images.githubusercontent.com/76901313/124161650-4a95c180-dabb-11eb-9f01-743c49b455c4.png) | ![Screenshot (18)](https://user-images.githubusercontent.com/76901313/124161654-4b2e5800-dabb-11eb-9cac-f7954a75155d.png) | ![Screenshot (19)](https://user-images.githubusercontent.com/76901313/124150276-0b617380-daaf-11eb-90e4-dbbc74115d62.png) | 
-|-|-|-|-|
-| Home Page | Explore Page | Tools | Resume Maker |
-| ![Screenshot (20)](https://user-images.githubusercontent.com/76901313/124161660-4d90b200-dabb-11eb-8426-3314fb25eb65.png) | ![Screenshot (21)](https://user-images.githubusercontent.com/76901313/124161675-508ba280-dabb-11eb-9a4f-2151a6d477d4.png) | ![Screenshot (22)](https://user-images.githubusercontent.com/76901313/124161680-51bccf80-dabb-11eb-8596-ec940feb3e27.png) | ![Screenshot (23)](https://user-images.githubusercontent.com/76901313/124161689-541f2980-dabb-11eb-80c1-c9982dc76b85.png) |
-| Smart PDF | Github Markdown Generator | Github Profile Readme Generator | Certificate Generator |
-
  <details>
   <summary><strong>Setup Steps</strong></summary>
   
