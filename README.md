@@ -14,7 +14,7 @@ The theme of our project idea is that every women should get their periods on ti
 - **Frontend:** Html,Css
 - **Backend:** Django
 - **Version Control:** Git and GitHub
-- **Hosting:** Heroku, Netlify
+- **Hosting:** Heroku
 - **Code Editor and tools**: VS Code
 
 
